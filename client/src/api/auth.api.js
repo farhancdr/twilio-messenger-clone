@@ -27,7 +27,7 @@ const adminSignin = async ({ email, password }) => {
         "Content-Type": "application/json",
         // Authorization: `Bearer ${token}`,
       },
-      body: JSON.stringify({ userName: email, password }),
+      body: JSON.stringify({ emailOrUserName: email, password }),
     });
     const res = await response.json();
     return res;

@@ -86,6 +86,7 @@ class ConversationsApp extends React.Component {
     localStorage.removeItem("email");
     localStorage.removeItem("password");
     localStorage.removeItem("admin");
+    localStorage.removeItem("twilioToken");
     this.conversationsClient.shutdown();
   };
 
